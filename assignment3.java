@@ -371,51 +371,58 @@ class number11{
 	    }
 	}
 }
-
-
 class number12{
 	static void methodOne(){
+		int count=20;
 	   int counter=0;
 	   int num=1;
 	   System.out.println(num);
-	   while(true){
+	   while(counter<count){
 		   if(counter%2==0){
 			   num=num*2;
-			   System.out.println(num);
+			   System.out.print(num);
 		   }
 		   else{
-			   num=num*2*(-1);
-			   System.out.println(num);
+			   num=num*2;
+			   System.out.print("-"+num);
 		   }
 		   counter++;
+		   System.out.print("    ");
 		
 	}
 	}
 	static void methodTwo(){
 		int diff=1;
+		int count=20;
+		int counter=0;
 		int result=0;
-		while(true){
+		while(counter<count){
 			result=result+diff;
-			System.out.println(result);
+			System.out.print(result);
 			diff++;
+			counter++;
+			System.out.println("    ");
 		}
 	}
 	static void methodThree(){
 		int result=1;
+		int count=20;
 		int counter=0;
 		System.out.println(result);
-		while(true){
+		while(counter<count){
 			if(counter%2==0){
 				result=result+2;
 			}
 			else{
 				result=result+3;
 			}
-			System.out.println(result);
+			System.out.print(result);
 			counter++;
+			System.out.print("  ");
 		}
 	}
 }
+
 
 class number13{
 	static void methodOne(){
